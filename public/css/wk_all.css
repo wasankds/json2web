@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Noto+Sans+Thai:wght@400;600&display=swap');
+
+:root {
+  --pad-n: 7px;  
+  --pad-l: 10px;  
+  --main-color: #454f5b;
+  --main-mid: #374655;
+  --main-dark: #2a3541;
+  --main-dark-color: #2a3541;  
+  --main-darker: #1b222a;
+  --main-darkest: #0d1014;
+  
+  --br-top: 5px 5px 0 0;
+  --br-bottom: 0 0 5px 5px;
+  --br-main: 5px;
+  --font-topic: #71c0f0;
+  --font-logo: lightblue;
+  --lh-tb: 1.75rem;
+  --lh-label: 2rem;
+  --red: rgb(255, 130, 130);
+}
+
+* { 
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:'Sarabun','sans-serif';
+}
+html{
+  font-size: 16px;
+  color: whitesmoke;
+}
+body{
+  background-color: #222;
+  margin: auto;
+}
+
+::placeholder { 
+  color: lightslategray; 
+  font-weight: 400;  
+  font-size: 0.9rem;
+  padding: 3px 0; /* ช่วยให้วรรณยุกต์แสดงครบ*/
+}
+
+/*** ขนาด Font ***/
+.fs-s{ font-size: 0.70rem; }
+.fs-xm{ font-size: 0.80rem; }
+.fs-m{ font-size: 0.85rem; }
+.fs-ns{ font-size: 0.90rem;}
+.fs-n{ font-size: 0.95rem;}
+.fs-l{ font-size: 1.15rem;}
+.fs-x{ font-size: 1.25rem; }
+.fs-xl{ font-size: 1.30rem; }
+.fs-xxl{ font-size: 1.75rem; }
+.fs-3xl{ font-size: 2.0rem; }
+/*** การวางแนวข้อความ ***/
+.al-r{ text-align: right; }
+.al-l{ text-align: left; }
+.al-c{ text-align: center; }
+/*** Margin ***/
+.mg-s{ margin: 3px!important;}
+.mg-m{ margin: 5px!important;}
+.mg-l{ margin: 7px!important;}
+.mg-xl{ margin: 12px!important;}
+.mg-xxl{ margin: 20px!important;}
+/*** Margin ***/
+.mg-t-s{ margin-top: 3px!important;}
+.mg-t-m{ margin-top: 5px!important;}
+.mg-t-l{ margin-top: 7px!important;}
+.mg-t-xl{ margin-top: 12px!important;}
+.mg-t-xxl{ margin-top: 20px!important;}
+/*** Margin ***/
+.mg-r-s{ margin-right: 3px!important;}
+.mg-r-m{ margin-right: 5px!important;}
+.mg-r-l{ margin-right: 7px!important;}
+.mg-r-xl{ margin-right: 12px!important;}
+.mg-r-xxl{ margin-right: 20px!important;}
+/*** Margin ***/
+.mg-l-s{ margin-left: 3px!important;}
+.mg-l-m{ margin-left: 5px!important;}
+.mg-l-l{ margin-left: 7px!important;}
+.mg-l-xl{ margin-left: 12px!important;}
+.mg-l-xxl{ margin-left: 20px!important;}
+/*** Margin ***/
+.mg-b-s{ margin-bottom: 3px!important;}
+.mg-b-m{ margin-bottom: 5px!important;}
+.mg-b-l{ margin-bottom: 7px!important;}
+.mg-b-xl{ margin-bottom: 12px!important;}
+.mg-b-xxl{ margin-bottom: 20px!important;}
+/*** Padding ***/
+.pd-s{ padding: 3px!important;}
+.pd-m{ padding: 5px!important;}
+.pd-l{ padding: 7px!important;}
+.pd-xl{ padding: 10px!important;}
+/*** Padding ***/
+.pd-t-s{ padding-top: 3px!important;}
+.pd-t-m{ padding-top: 5px!important;}
+.pd-t-l{ padding-top: 7px!important;}
+.pd-t-xl{ padding-top: 10px!important;}
+/*** Padding ***/
+.pd-l-s{ padding-left: 3px!important;}
+.pd-l-m{ padding-left: 5px!important;}
+.pd-l-l{ padding-left: 7px!important;}
+.pd-l-xl{ padding-left: 10px!important;}
+/*** Padding ***/
+.pd-r-s{ padding-right: 3px!important;}
+.pd-r-m{ padding-right: 5px!important;}
+.pd-r-l{ padding-right: 7px!important;}
+.pd-r-xl{ padding-right: 10px!important;}
+/*** Padding ***/
+.pd-b-s{ padding-bottom: 3px!important;}
+.pd-b-m{ padding-bottom: 5px!important;}
+.pd-b-l{ padding-bottom: 7px!important;}
+.pd-b-xl{ padding-bottom: 10px!important;}
+/*** กลุ่มเส้นขอบ ***/
+.bl{ border-left: 1px solid black!important; }
+.br{ border-right: 1px solid black!important; }
+.bt{border-top: 1px solid black!important;}
+.bb{border-bottom: 1px solid black!important;}
+.ba{border: 1px solid black!important;}
+.bn{border: none;}
+/*** กลุ่มเส้นขอบ ***/
+.ba2{ border: 1px solid #888!important; }
+.bl2{ border-left: 1px solid #888!important; }
+.br2{ border-right: 1px solid #888!important; }
+.bt2{border-top: 1px solid #888!important;}
+.bb2{border-bottom: 1px solid #888!important;}
+.ba2{border: 1px solid #888!important;}
+/*** กลุ่มเส้นขอบ ***/
+.bl3{ border-left: 3px solid #111!important; }
+.br3{ border-right: 3px solid #111!important; }
+.bt3{border-top: 3px solid #111!important;}
+.bb3{border-bottom: 3px solid #111!important;}
+.ba3{border: 3px solid #111!important;}
+/*** กลุ่มเส้นขอบ ***/
+.bl4{border-left: 2px solid gold!important; }
+.br4{border-right: 2px solid gold!important; }
+.bt4{border-top: 2px solid gold!important;}
+.ba4{
+  border-image: linear-gradient(45deg, gold 0%, darkgoldenrod 100%) 1!important;
+  border-radius: 5px!important;
+  border-width: 3px!important;
+  border-style: solid!important;
+  margin-top: 1px;
+}
+/*** กลุ่มเส้นขอบ ***/
+.bl-g{ border-left: 1px dashed gray!important; }
+.br-g{ border-right: 1px dashed gray!important; }
+.bt-g{border-top: 1px dashed gray!important;}
+.bb-g{border-bottom: 1px dashed gray!important;}
+.ba-g{border: 1px dashed gray!important;}
+/*** กลุ่มเส้นขอบ ***/
+.bl-d{ border-left: 1px dotted lightgray!important; }
+.br-d{ border-right: 1px dotted lightgray!important; }
+.bt-d{border-top: 1px dotted lightgray!important;}
+.bb-d{border-bottom: 1px dotted lightgray!important;}
+.ba-d{border: 1px dotted lightgray!important;}
+/*** กลุ่มเส้นขอบ ***/
+.bl-m{ border-left: 1px solid #454f5b!important; }
+.br-m{ border-right: 1px solid #454f5b!important; }
+.bt-m{border-top: 1px solid #454f5b!important;}
+.bb-m{border-bottom: 1px solid #454f5b!important;}
+.ba-m{border: 1px solid #454f5b!important;}
+
+.bg-texture{
+  background: repeating-linear-gradient(
+    45deg,
+    var(--main-darker),
+    var(--main-darker) 10px,
+    var(--main-darkest) 10px,
+    var(--main-darkest) 20px
+  );
+}
+
+/*** กลุ่มรัศมีเส้นขอบ ***/
+.bdr3{border-radius: 3px}
+.bdr5{border-radius: 5px}
+.bdr3-top{border-radius: 3px 3px 0 0 }
+.bdr3-bottom{border-radius: 0 0 3px 3px}
+/*** Background ***/
+.bg-line-swap{ background-color: #49596c ; }
+.bg-line-swap2{ background-color: #2a3541 ; }
+/*** กลุ่มเส้นขอบ ***/
+.bdr3{border-radius: 3px}
+.bdr5{border-radius: 5px}
+.bdr3-top{border-radius: 3px 3px 0 0 }
+.bdr3-bottom{border-radius: 0 0 3px 3px}
+/*** Background ***/
+.bg-line-swap{ background-color: #49596c ; }
+.bg-line-swap-main{ background-color: var(--main-color) ; }
+.bg-line-swap-dark{ background-color: var(--main-dark) ; }
+.bg-red{ background-color: red; }
+.bg-black{ background-color: black; }
+.bg-111{ background-color: #111; }
+.bg-222{ background-color: #222; }
+.bg-333{ background-color: #333; }
+.bg-444{ background-color: #444; }
+.bg-555{ background-color: #555; }
+.bg-666{ background-color: #666; }
+.bg-777{ background-color: #777; }
+.bg-888{ background-color: #888; }
+.bg-999{ background-color: #999; }
+.bg-aaa{ background-color: #aaa; }
+.bg-bbb{ background-color: #bbb; }
+.bg-ccc{ background-color: #ccc; }
+.bg-ddd{ background-color: #ddd; }
+.bg-eee{ background-color: #eee; }
+.bg-blue{ background-color: blue; }
+.bg-yellow{ background-color: yellow; }
+.bg-orange{ background-color: orange; }
+.bg-dkorange{ background-color: darkorange; }
+.bg-khaki{ background-color: Khaki; }
+.bg-greenyellow{ background-color: GreenYellow; }
+.bg-green{ background-color: green; }
+.bg-pink{ background-color: pink; }
+.bg-magenta{ background-color: magenta; }
+.bg-white{ background-color: white; }
+.bg-lightgray{ background-color: lightgray; }
+.bg-grey{ background-color: grey; }
+.bg-lightslategrey{ background-color: LightSlateGrey; }
+.bg-aquamarine{ background-color: Aquamarine; }
+.bg-aqua{ background-color: Aqua; }
+.bg-deepskyblue{ background-color: DeepSkyBlue; }
+.bg-cornflowerblue{ background-color: CornflowerBlue; }
+.bg-mediumspringgreen{ background-color: MediumSpringGreen; }
+.bg-mediumseagreen{ background-color: MediumSeaGreen; }
+
+.main-color{ background-color:var(--main-color) }
+.bg-main-color{ background-color:var(--main-color) }
+.bg-main-mid{ background-color:var(--main-mid)}
+.bg-main-dark{ background-color: var(--main-dark); }
+.bg-main-darker{ background-color:var(--main-darker) }
+
+/* สำหรับปุ่ม */
+.bg-comment{  background-image: linear-gradient(cornflowerblue, royalblue); }
+.bg-reply{ background-image:linear-gradient(darkcyan, rgb(0, 80, 80)); }
+.bg-reset{  background-image: linear-gradient(rgb(185, 0, 185), rgb(89, 0, 89)); color: white; }
+.bg-submit{ background-image:linear-gradient(darkcyan, rgb(0, 80, 80)); }
+.bg-get{ background-image: linear-gradient(  darkgoldenrod, rgb(84, 60, 0) ); color: white; }
+.bg-btn-course{ background-image: linear-gradient( var(--main-mid), var(--main-darker) ); color: white; }
+.bg-btn-course-active{ background-image: linear-gradient(steelblue, royalblue ); color: white; }
+.bg-rename{ background-image:linear-gradient(darkcyan, rgb(0, 80, 80));}
+.bg-move{ background-image:linear-gradient(darkorange,rgb(134, 73, 0));}
+.bg-list{ background-image:linear-gradient( HotPink, rgb(140, 30, 85));}
+.bg-preview{ background-image:linear-gradient( DarkKhaki, rgb(86, 83, 42)); }
+.bg-link{ background-image:linear-gradient(darkcyan, rgb(0, 80, 80)); }
+.bg-login{ background-image:linear-gradient(cornflowerblue, royalblue); }
+.bg-load{  background-image: linear-gradient(cornflowerblue, royalblue); }
+.bg-reload{ background-image: linear-gradient(orchid, darkmagenta);}
+.bg-save{ background-image: linear-gradient(rgb(115, 187, 115), darkgreen);}
+.bg-add{ background-image:linear-gradient(RoyalBlue, rgb(42, 69, 127)); }
+.bg-new{ background-image:linear-gradient(royalblue, darkblue); }
+.bg-update{ background-image:linear-gradient(royalblue, darkblue); }
+.bg-register{ background-image: linear-gradient(rgb(115, 187, 115), darkgreen);}
+.bg-copy{ background-image:linear-gradient(rgb(118, 191, 194),steelblue); }
+.bg-edit{ background-image:linear-gradient(orange,orangered); }
+.bg-edit-active{ background-image:linear-gradient(rgb(33, 195, 165),rgb(21, 125, 106)) }
+.bg-delete{ background-image:linear-gradient(red,darkred) }
+.bg-print{ background-image: linear-gradient(rgb(113, 151, 38), rgb(68, 85, 38)); color: white; }
+.bg-change{ background-image: linear-gradient(magenta, rgb(137, 0, 137))}
+.bg-search{ background-image: linear-gradient(rgb(75, 203, 197), rgb(42, 99, 96)); }
+.bg-fs{ background-color: #263F3F; }
+.bg-remove{ background-image: linear-gradient(orange, darkgoldenrod);}
+.bg-check{ background-image: linear-gradient(orange, darkgoldenrod);}
+.bg-cancel{ background-image: linear-gradient(orange, darkgoldenrod);}
+.bg-clear{  background-image: linear-gradient(rgb(185, 0, 185), rgb(89, 0, 89)); color: white; }
+.bg-report{ background-image: linear-gradient(HotPink, rgb(140, 30, 85));}
+.bg-report2{ background-image: linear-gradient(MediumSeaGreen, green) }
+.bg-report3{ background-image: linear-gradient(royalblue, DodgerBlue) }
+.bg-view{ background-image: linear-gradient( rgb(0, 200, 167), rgb(0, 135, 112) ); color: white; }
+.bg-create{ background-image: linear-gradient(rgb(235, 179, 37), rgb(130, 96, 10)); color: white; }
+.bg-send{ background-image: linear-gradient(rgb(167, 129, 243), rgb(88, 68, 127)); color: white; }
+.bg-close{  background-image: linear-gradient(rgb(209, 140, 44), rgb(144, 98, 25)); color: white; }
+.bg-finish{  background-image: linear-gradient(darkorange, darkred); color: white; }
+.bg-open{ background-color: RoyalBlue;}
+.bg-borrow{ background-color: RoyalBlue;}
+.bg-locate{ background-image: linear-gradient(rgb(0, 160, 117), rgb(85, 117, 29)); color: white; }
+.bg-scan{ background-color: orchid; color: white; }
+.bg-minus{ background-image: linear-gradient(rgb(209, 44, 44), rgb(144, 25, 25)); color: white; }
+.bg-undo{ background-image: linear-gradient(darkcyan, #004443); color: white; }
+.bg-dn{ background-image: linear-gradient(violet, rgb(151, 53, 193)); color: white; }
+.bg-up{ background-image:linear-gradient(rgb(42, 188, 232), rgb(38, 95, 121)); color: white; }
+.bg-play{ background-image:linear-gradient(rgb(42, 188, 232), rgb(38, 95, 121)); color: white; }
+.bg-upload{ background-image:linear-gradient(rgb(42, 188, 232), rgb(38, 95, 121)); color: white; }
+.bg-width{ background-color: var(--main-dark)}
+.bg-database{ background-image: linear-gradient(darkcyan, #004443); color: white; }
+
+/***  ***/
+.dp-n{ display: none!important; }
+
+/*** Font Color ***/
+.fc-red{ color: rgb(255, 130, 130)!important; font-weight: 400;}
+.fc-red2{ color: red!important;}
+
+
+/*** Font Color ***/
+.fc-white{ color: white; }
+.fc-lavender{ color: Lavender; }
+.fc-black{ color: black; }
+.fc-gray{ color: lightgray; }
+.fc-ligray{ color: lightgray; }
+.fc-dkgrey{ color: DarkGrey; }
+.fc-dimgray{ color: DimGray; }
+.fc-silver{ color: Silver; }
+.fc-deepskyblue{ color: DeepSkyBlue; }
+.fc-steelblue{ color: steelblue; }
+.fc-cornblue{ color: cornflowerblue; }
+.fc-cadetblue{ color: CadetBlue; }
+.fc-dodgerblue{ color: DodgerBlue!important; } /* V4.5 */
+.fc-cyan{ color: cyan; }
+.fc-licyan{ color: lightcyan; }
+.fc-dkcyan{ color: darkcyan; }
+.fc-dkturquoise{ color: DarkTurquoise; }
+.fc-blue{ color: blue; }
+.fc-liblue{ color: lightblue; }
+.fc-liskyblue{ color: LightSkyBlue!important ;; }
+.fc-skyblue{ color: skyblue; }
+.fc-khaki{ color: Khaki; }
+.fc-yellow{ color: yellow; }
+.fc-goldrod{ color: GoldenRod; }
+.fc-yg{ color: yellowgreen ; }
+.fc-gy{ color: greenyellow; }
+.fc-lawngreen{ color: LawnGreen ; }
+.fc-lime{ color: lime!important ; } /* V4.6 */
+.fc-limegreen{ color: limegreen ; }
+.fc-palegreen{ color: PaleGreen ; }
+.fc-ligreen{ color: lightgreen; }
+.fc-lired{ color: var(--red); font-weight: 400;}
+/* .fc-red{ color: red;} */
+.fc-gold{ color: Gold!important; }
+.fc-pink{ color: pink; }
+.fc-plum{ color: Plum; }
+.fc-hotpink{ color: HotPink!important; } /* V4.5 */
+.fc-orchid{ color: Orchid; }
+.fc-magenta{ color: magenta!important;; } /* V4.5 */
+.fc-green{ color: green; }
+.fc-msg{ color: MediumSeaGreen; }
+.fc-orange{ color: orange;  }
+.fc-orangered{ color: orangered;  }
+.fc-888{ color: #888; }
+.fc-999{ color: #999; }
+.fc-aaa{ color: #aaa; }
+.fc-bbb{ color: #bbb; }
+.fc-ccc{ color: #ccc; }
+.fc-ddd{ color: #ddd; }
+.fc-eee{ color: #eee; }
+
+/*  */
+.fw-b{font-weight: bold;}
+.fx-x{ text-decoration: line-through; }
+u { text-decoration: underline; }
+s,del {
+  text-decoration: line-through!important;
+  color: lightgray;
+}
+
+/*  */
+.box-white{ color: white!important; padding: 0 3px; border: 1px solid white; border-radius: 3px;}
+.box-lime{ color: lime!important; padding: 0 3px; border: 1px solid lime; border-radius: 3px;}
+.box-lime:hover{ background-color: darkgreen}
+.box-yellow{ color: yellow!important; padding: 0 3px; border: 1px solid yellow; border-radius: 3px;}
+.box-yellow:hover{ background-color: rgb(72, 40, 0);}
+.box-liblue{ color: lightblue!important; padding: 0 3px; border: 1px solid lightblue; border-radius: 3px;}
+.box-liblue:hover{background-color: darkblue}
+.box-red{ color: var(--red)!important; padding: 0 3px; border: 1px solid var(--red); border-radius: 3px;}
+.box-red:hover{background-color:darkred}
+.box-download{ 
+  color: limegreen!important; padding: 3px 12px; border: 1px solid green; border-radius: 30px;
+  background-color: var(--main-darker);
+}
+.box-download:hover{ filter: brightness(150%);}
+.box-button{
+  background-color:#444;
+  text-align: center;
+  border: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.box-button:hover{ filter:brightness(130%) }
+
+
+/*** ใช้เท่าที่จำเป็น ***/
+.lh-7xs{ line-height: 0.6rem;}
+.lh-6xs{ line-height: 0.7rem;}
+.lh-5xs{ line-height: 0.8rem;}
+.lh-4xs{ line-height: 0.9rem;}
+.lh-3xs{ line-height: 1rem;}
+.lh-2xs{ line-height: 1.15rem;}
+.lh-xs{ line-height: 1.25rem;}
+.lh-s{ line-height: 1.5rem;}
+.lh-n{ line-height: 1.75rem;}
+.lh-m{ line-height: 2.00rem;}
+.lh-l{ line-height: 2.50rem;}
+.lh-xl{ line-height: 3rem;}
+/*  */
+.lh-tb{ line-height: var(--lh-tb); }
+.lh-label{ line-height: var(--lh-label); }
+.lh-p{ line-height: 1.75rem; }
+
+/******  **************************/
+.clickable{ cursor: pointer; }
+.clickable:hover{ 
+  filter: brightness(120%);
+  /* font-weight: bold; */
+}
+
+/******  **************************/
+a:link { color: white; }
+a:visited { color: white; }
+a:hover { color: lightgreen; }
+/* a:hover { color: lightgreen; backdrop-filter: brightness(150%) } */
+a:active { color: white; }
+
+/******  **************************/
+.dp-n{ display: none!important;}
+.vd-n{
+  background-color: yellow!important;
+  border: 1px solid red!important;
+}
+/****** Toast และ Notify **************************/
+.green {
+  border-top: 3px solid lime;
+  border-bottom: 3px solid lime;
+  background-color: darkgreen;
+  color: white!important;
+  font-weight: bold;
+}
+.yellow {
+  border-top: 3px solid darkgoldenrod;
+  border-bottom: 3px solid darkgoldenrod;
+  background-color: yellow;
+  color:black!important;
+  font-weight: bold;
+}
+.blue {
+  border-top: 3px solid Navy;
+  border-bottom: 3px solid Navy;
+  background-color: DodgerBlue;
+  color: white!important;
+  font-weight: bold;
+}
+.red {
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  background-color: darkred!important;
+  color: white!important;
+  font-weight: bold;
+}
+
+/* ต้องตั้งเวลา 3.0 ให้ตรงกับ  showToast */
+@keyframes fadein {
+  from { bottom: 0;    opacity: 0;}
+  to {   bottom: 90px; opacity: 1;}
+}
+@keyframes fadeout {
+  from { bottom: 90px; opacity: 1;}
+  to {   bottom: 0;    opacity: 0;}
+}
+@-webkit-keyframes fadein {
+  from { bottom: 0;    opacity: 0;}
+  to {   bottom: 90px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+  from { bottom: 90px; opacity: 1;}
+  to {   bottom: 0;    opacity: 0;}
+}
+
+#notify {
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  bottom: 90px;
+  width: 100%;
+  padding: 15px 5px;
+  line-height: 1.75rem;
+  animation : none ;
+  visibility : "visible";
+  animation : fadeNotifyIn 0.5s, fadeNotifyOut 0.5s 4s;
+}
+@keyframes fadeNotifyIn {
+  from { bottom: 0;    opacity: 0;}
+  to {   bottom: 90px; opacity: 1;}
+}
+@keyframes fadeNotifyOut {
+  from { bottom: 90px; opacity: 1;}
+  to {   bottom: 0;    opacity: 0;}
+}
+@-webkit-keyframes fadeNotifyIn {
+  from { bottom: 0;    opacity: 0;}
+  to {   bottom: 90px; opacity: 1;}
+}
+@-webkit-keyframes fadeNotifyOut {
+  from { bottom: 90px; opacity: 1;}
+  to {   bottom: 0;    opacity: 0;}
+}
