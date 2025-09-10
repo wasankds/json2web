@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app_json2web.js",
-    "start": "nodemon app_json2web.js",
     "app": "node app_json2web.js",
     "kill": "taskkill /f /im node.exe",    
+    "start": "pm2 app_json2web.js",
     "restart": "pm2 restart app_json2web.js",
     "delete": "pm2 delete app_json2web.js",    
     "test": "echo \"Error: no test specified\" && exit 1"
