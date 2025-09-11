@@ -11,7 +11,8 @@
     "start1": "pm2 start app_json2web.js -i 1",
     "restart": "pm2 restart app_json2web.js",
     "delete": "pm2 delete app_json2web.js",    
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git1": "git add . && git commit -m \"%date% %time%\" && git push origin main"
   },
   "keywords": [],
   "author": "",
