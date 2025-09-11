@@ -14,7 +14,10 @@ const io = new Server(server, {
     methods: ['GET', 'POST'],
   },
 });
-const port = 83;
+
+
+// ใช้พอร์ต 83 เท่านั้นเพราะผูกอยู่กับลิงค์ https://json2web.wasankds.com
+const port = 83; 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
