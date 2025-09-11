@@ -34,7 +34,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 mt-5">
-        <h3 class="text-center">Test "ESP32 JSON to Web"</h3>
+        <h3 class="text-center">
+          <span>Test "ESP32 JSON to Web"</span>
+          <button id="clearTable" class="btn btn-danger btn-sm ms-3">Clear</button>
+          <script>
+            $(document).on('click', '#clearTable', function() {
+              $('#espTbody').empty();
+            });
+          </script>
+        </h3>
         <table class="table table-bordered table-striped mt-3">
           <thead>
             <tr>
@@ -66,6 +74,9 @@
       `;
       $('#espTbody').append(newRow);
     })
+
+
+
 
   </script>
 

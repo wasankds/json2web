@@ -14,7 +14,7 @@ const io = new Server(server, {
     methods: ['GET', 'POST'],
   },
 });
-const port = 83;
+const port = 80;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -36,8 +36,13 @@ app.get("/", (req, res) => {
   });
 });
 
-//========== 
-app.post("/e001", (req, res) => {
+
+// ==========================================
+// https://json2web.wasankds.com/esp32
+// https://tualeklek.com/esp32
+// 
+//
+app.post("/esp32", (req, res) => {
   const { key } = req.body;
   if (key !== '7127000') {
     return res.status(403).send({ msg: 'Invalid key' });
