@@ -36,7 +36,8 @@ app.get("/", (req, res) => {
   });
 });
 
-app.post("/esp32", (req, res) => {
+//========== 
+app.post("/e001", (req, res) => {
   const { key } = req.body;
   if (key !== '7127000') {
     return res.status(403).send({ msg: 'Invalid key' });
@@ -59,6 +60,7 @@ app.post("/esp32", (req, res) => {
 });
 
 server.listen(port, () => {
+  console.log(`----------------------`);
   console.log(`Server is running on http://localhost:${port}`);
 });
 
